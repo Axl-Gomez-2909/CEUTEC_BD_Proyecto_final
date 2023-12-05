@@ -19,6 +19,15 @@
             <li class="nav-item">
                 <a class="nav-link" href="formularios_action/formulario_ordenes.php">Formulario de Órdenes</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="formularios_action/formulario_platos.php">Formulario de Ingresar Platos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="formularios_action/formulario_actualizar_platos.php">Formulario de Actualizar Platos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="formularios_action/formulario_elimina_platos.php">Formulario de Eliminar Platos</a>
+            </li>
         </ul>
     </div>
 
