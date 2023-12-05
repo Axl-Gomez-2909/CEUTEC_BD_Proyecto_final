@@ -12,35 +12,34 @@
 <div class="container mt-5">
     <h2 class="mb-4">Formulario de Productos</h2>
 
-    <form action="procesar_formulario.php" method="post">
+    <form action="productos_ingreso.php" method="post">
         <div class="form-group">
             <label for="codigo">Código del Producto:</label>
-            <input type="number" class="form-control" id="codigo" name="codigo" required>
+            <input type="number" class="form-control" id="codigo" name="codigo" readonly>
+        </div>        
+
+        <div class="form-group">
+            <label for="NombreProducto">NombreProducto:</label>
+            <input type="text" class="form-control" id="NombreProducto" name="NombreProducto" required>
+        </div>
+            
+        <div class="form-group">
+            <label for="UbicacionBodega">UbicacionBodega:</label>
+            <input type="text" class="form-control" id="UbicacionBodega" name="UbicacionBodega" required>          
         </div>
 
         <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
+            <label for="CantidadExistencia">Cantidad en Existencia:</label>
+            <input type="number" class="form-control" id="CantidadExistencia" name="CantidadExistencia" required>
         </div>
 
         <div class="form-group">
-            <label for="descripcion">Descripción:</label>
-            <textarea class="form-control" id="descripcion" name="descripcion" rows="3" required></textarea>
+            <label for="PrecioCosto">PrecioCosto:</label>
+            <input type="number" step="0.01" class="form-control" id="PrecioCosto" name="PrecioCosto" required>
         </div>
-
         <div class="form-group">
-            <label for="precio">Precio:</label>
-            <input type="number" step="0.01" class="form-control" id="precio" name="precio" required>
-        </div>
-
-        <div class="form-group">
-            <label for="cantidad">Cantidad en Existencia:</label>
-            <input type="number" class="form-control" id="cantidad" name="cantidad" required>
-        </div>
-
-        <div class="form-group">
-            <label for="categoria">Código de Categoría:</label>
-            <input type="number" class="form-control" id="categoria" name="categoria" required>
+            <label for="PrecioVenta">PrecioVenta:</label>
+            <input type="number" step="0.01" class="form-control" id="PrecioVenta" name="PrecioVenta" required>
         </div>
 
         <button type="submit" class="btn btn-primary">Enviar</button>
