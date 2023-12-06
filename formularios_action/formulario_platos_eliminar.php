@@ -28,7 +28,7 @@
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <!-- Navegacion -->
-                    <li>
+                    <li >
                         <a href="../index.php"><i class="fa fa-th-large"></i> <span class="nav-label">Productos</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li class="active"><a href="formulario_productos_ingresar.php">Formulario/Ingresar</a></li>
@@ -44,12 +44,12 @@
                             <li ><a href="formulario_proveedores_eliminar.php">Formulario/Eliminar</a></li>
                         </ul>
                     </li>
-                    <li class="active">
+                    <li >
                         <a href="../index.php"><i class="fa fa-th"></i> <span class="nav-label">Acompañantes</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li ><a href="formulario_acompanates_ingresar.php">Formulario/Ingresar</a></li>
+                            <li class="active"><a href="formulario_acompanates_ingresar.php">Formulario/Ingresar</a></li>
                             <li ><a href="formulario_acompanates_modificar.php">Formulario/Modificar</a></li>
-                            <li class="active"><a href="formulario_acompanates_eliminar.php">Formulario/Eliminar</a></li>
+                            <li ><a href="formulario_acompanates_eliminar.php">Formulario/Eliminar</a></li>
                         </ul>
                     </li>
                     <li >
@@ -60,12 +60,12 @@
                             <li ><a href="formulario_proacomp_eliminar.php">Formulario/Eliminar</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="../index.php"><i class="fa fa-cutlery"></i> <span class="nav-label">Platos</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                        <li class="active"><a href="formulario_platos_ingresar.php">Formulario/Ingresar</a></li>
+                            <li ><a href="formulario_platos_ingresar.php">Formulario/Ingresar</a></li>
                             <li ><a href="formulario_platos_modificar.php">Formulario/Modificar</a></li>
-                            <li ><a href="formulario_platos_eliminar.php">Formulario/Eliminar</a></li>
+                            <li class="active"><a href="formulario_platos_eliminar.php">Formulario/Eliminar</a></li>
                         </ul>
                     </li>
                     <li>
@@ -86,13 +86,13 @@
                 <div class="col-lg-10">
                 <div class="row wrapper border-bottom white-bg page-heading">
                         <div class="col-lg-10">
-                            <h2>Eliminación Acompañantes</h2>
+                            <h2>Eliminación Platos</h2>
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
                                     <a href="../index.php">Inicio</a>
                                 </li>
                                 <li class="breadcrumb-item active">
-                                    <strong>Acompañantes</strong>
+                                    <strong>Platos</strong>
                                 </li>
                             </ol>
                         </div>
@@ -103,18 +103,15 @@
                     <h3>Formulario de eliminación de datos.</h3>
                    
                     <br>
-                    <form action="procesar_acompanates_eliminar.php" method="post" >
+                    <form action="platos_eliminar.php" method="post">
                         <div class="form-group">
-                                <label for="codigo">Codigo:</label>
-                                <input type="number" class="form-control" id="codigo" name="codigo" step="0.01" required>
-                         </div>
-                         <div class="form-group">
-                                <label for="nombre">Nombre:</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre" required>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                            <label for="codigo">Código de plato:</label>
+                            <input type="number" class="form-control" id="codigo" name="codigo" required>
+                        </div>      
+
+                        <button type="submit" class="btn btn-primary">Eliminar Plato</button>
                     </form>
+
                 </div>
                 <div class="col-lg-2"></div>
         

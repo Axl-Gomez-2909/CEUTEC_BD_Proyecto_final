@@ -28,7 +28,7 @@
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <!-- Navegacion -->
-                    <li>
+                    <li class="active">
                         <a href="../index.php"><i class="fa fa-th-large"></i> <span class="nav-label">Productos</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li class="active"><a href="formulario_productos_ingresar.php">Formulario/Ingresar</a></li>
@@ -44,12 +44,12 @@
                             <li ><a href="formulario_proveedores_eliminar.php">Formulario/Eliminar</a></li>
                         </ul>
                     </li>
-                    <li class="active">
+                    <li >
                         <a href="../index.php"><i class="fa fa-th"></i> <span class="nav-label">Acompañantes</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li ><a href="formulario_acompanates_ingresar.php">Formulario/Ingresar</a></li>
+                            <li class="active"><a href="formulario_acompanates_ingresar.php">Formulario/Ingresar</a></li>
                             <li ><a href="formulario_acompanates_modificar.php">Formulario/Modificar</a></li>
-                            <li class="active"><a href="formulario_acompanates_eliminar.php">Formulario/Eliminar</a></li>
+                            <li ><a href="formulario_acompanates_eliminar.php">Formulario/Eliminar</a></li>
                         </ul>
                     </li>
                     <li >
@@ -86,13 +86,13 @@
                 <div class="col-lg-10">
                 <div class="row wrapper border-bottom white-bg page-heading">
                         <div class="col-lg-10">
-                            <h2>Eliminación Acompañantes</h2>
+                            <h2>Ingreso Productos</h2>
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
                                     <a href="../index.php">Inicio</a>
                                 </li>
                                 <li class="breadcrumb-item active">
-                                    <strong>Acompañantes</strong>
+                                    <strong>Productos</strong>
                                 </li>
                             </ol>
                         </div>
@@ -100,19 +100,39 @@
 
                         </div>
                     </div>
-                    <h3>Formulario de eliminación de datos.</h3>
+                    <h3>Formulario de ingreso de datos.</h3>
                    
                     <br>
-                    <form action="procesar_acompanates_eliminar.php" method="post" >
+                    <form action="productos_ingreso.php" method="post">
                         <div class="form-group">
-                                <label for="codigo">Codigo:</label>
-                                <input type="number" class="form-control" id="codigo" name="codigo" step="0.01" required>
-                         </div>
-                         <div class="form-group">
-                                <label for="nombre">Nombre:</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            <label for="codigo">Código del Producto:</label>
+                            <input type="number" class="form-control" id="codigo" name="codigo" readonly>
+                        </div>        
+
+                        <div class="form-group">
+                            <label for="NombreProducto">NombreProducto:</label>
+                            <input type="text" class="form-control" id="NombreProducto" name="NombreProducto" required>
                         </div>
-                        
+                            
+                        <div class="form-group">
+                            <label for="UbicacionBodega">UbicacionBodega:</label>
+                            <input type="text" class="form-control" id="UbicacionBodega" name="UbicacionBodega" required>          
+                        </div>
+
+                        <div class="form-group">
+                            <label for="CantidadExistencia">Cantidad en Existencia:</label>
+                            <input type="number" class="form-control" id="CantidadExistencia" name="CantidadExistencia" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="PrecioCosto">PrecioCosto:</label>
+                            <input type="number" step="0.01" class="form-control" id="PrecioCosto" name="PrecioCosto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="PrecioVenta">PrecioVenta:</label>
+                            <input type="number" step="0.01" class="form-control" id="PrecioVenta" name="PrecioVenta" required>
+                        </div>
+
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
                 </div>
