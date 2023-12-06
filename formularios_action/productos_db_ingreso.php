@@ -1,11 +1,9 @@
 <?php
-   $usuario="root";
-   $pass="Arge2909";
-   $baseDatos="PRODUCTOS_ORDENES";
-   $servidor="127.0.0.1";
+
 
     try{
-        $conexion=new mysqli($servidor, $usuario, $pass, $baseDatos, 3306);        
+
+        include("db.php");    
 
         echo "Conexion exitosa, ";
 
@@ -47,8 +45,9 @@
         }else{
             echo "OrdProductoen no almacenado";
         }
-
         $conexion->close();
+
+        header("Location: productos_listado.php");
         
     }catch(Exception $error){
        echo "Fallo al conectar a MySQL: (" . $conexion->connect_errno . ") " . $conexion->connect_error;   
