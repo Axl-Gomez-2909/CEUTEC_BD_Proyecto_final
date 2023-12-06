@@ -5,7 +5,7 @@
         <a class="nav-link" href="/formularios_action/proveedores_listado.php">Regresar</a>
     </div>  
  	 	
-    <form action="productos_db_ingreso.php" method="post">
+    <form action="proveedores_db_ingreso.php" method="post">
         <div class="row">
            <h2 class="mb-4">Formulario de Ingreso de Proveedores</h2>
         </div>        

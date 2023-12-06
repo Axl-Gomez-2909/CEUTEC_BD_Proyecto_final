@@ -25,7 +25,7 @@
     </div>
 
 
-    <form action="productos_db_editar.php" method="post">
+    <form action="proveedores_db_editar.php" method="post">
     <div class="row"> 
         <h2 class="mb-4">Formulario de Edicion de Productos</h2>
     </div>

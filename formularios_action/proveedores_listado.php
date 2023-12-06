@@ -48,6 +48,7 @@
 
                         <td>
                             <a href="proveedores_formulario_editar.php?ID=<?php echo $fila['ID']; ?> ">Editar</a>                            
+                            <a href="proveedores_db_eliminar.php?ID=<?php echo $fila['ID']; ?> ">Eliminar</a>                            
                         </td>
 
                     </tr>
