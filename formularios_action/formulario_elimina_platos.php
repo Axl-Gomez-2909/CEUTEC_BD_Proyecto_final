@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Formulario Actualizar Platillos</title>
+    <title>Formulario Eliminar Platillos</title>
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
 
 <div class="container mt-5">
-    <h2 class="mb-4">Formulario Actualizar Platillos</h2>
+    <h2 class="mb-4">Formulario Eliminar Platillos</h2>
 
     <form action="platos_eliminar.php" method="post">
         <div class="form-group">

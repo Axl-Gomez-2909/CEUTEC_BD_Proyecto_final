@@ -63,8 +63,8 @@
                     <li class="active">
                         <a href="../index.php"><i class="fa fa-cutlery"></i> <span class="nav-label">Platos</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li ><a href="formulario_platos_ingresar.php">Formulario/Ingresar</a></li>
-                            <li class="active"><a href="formulario_platos_modificar.php">Formulario/Modificar</a></li>
+                            <li class="active"><a href="formulario_platos_ingresar.php">Formulario/Ingresar</a></li>
+                            <li ><a href="formulario_platos_modificar.php">Formulario/Modificar</a></li>
                             <li ><a href="formulario_platos_eliminar.php">Formulario/Eliminar</a></li>
                         </ul>
                     </li>
@@ -86,7 +86,7 @@
                 <div class="col-lg-10">
                 <div class="row wrapper border-bottom white-bg page-heading">
                         <div class="col-lg-10">
-                            <h2>Modificación Platos</h2>
+                            <h2>Ingreso de acompñantes de Platos</h2>
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
                                     <a href="../index.php">Inicio</a>
@@ -100,33 +100,37 @@
 
                         </div>
                     </div>
-                    <h3>Formulario de modificación de platos.</h3>
+                    <h3>Formulario de ingreso de datos.</h3>
                    
                     <br>
-                    <form action="platos_actualizar.php" method="post">
+                    <form action="platos_acomp_ingreso.php" method="post">
+                        
                         <div class="form-group">
-                            <label for="codigo">Código de plato:</label>
+                            <label for="codigo">Código</label>
                             <input type="number" class="form-control" id="codigo" name="codigo" required>
-                        </div>        
+                        </div> 
+                        
+                        <div class="form-group">
+                            <label for="codigo_plato">Código de plato:</label>
+                            <input type="number" class="form-control" id="codigo_plato" name="codigo_plato" required>
+                        </div> 
 
                         <div class="form-group">
-                            <label for="NombrePlato">NombrePlato:</label>
-                            <input type="text" class="form-control" id="NombrePlato" name="NombrePlato" required>
-                        </div>
-                            
-                        <div class="form-group">
-                            <label for="PrecioVenta">PrecioVenta:</label>
-                            <input type="number" step="0.01" class="form-control" id="PrecioVenta" name="PrecioVenta" required>
-                        </div>       
+                            <label for="codigo_acom">Código Acompañante</label>
+                            <input type="number" class="form-control" id="codigo_acom" name="codigo_acom" required>
+                        </div> 
 
+                                                   
                         <div class="form-group">
-                            <label for="FechaModificacion">Fecha Modificacion:</label>
-                            <input type="datetime-local" class="form-control" id="FechaModificacion" name="FechaModificacion" required>
+                            <label for="Cantidad">Cantidad:</label>
+                            <input type="number" step="1" class="form-control" id="Cantidad" name="Cantidad" required>
                         </div>
+
+             
                         
 
                         <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-                    </form>
+                 </form>
 
                 </div>
                 <div class="col-lg-2"></div>
@@ -154,3 +158,5 @@
 
 </body>
 </html>
+
+
